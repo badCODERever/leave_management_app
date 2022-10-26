@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'leave_management_app';
+  initialMenu = 'reqMenu';
+
+  onCallComponent(menu: string) {
+    this.initialMenu = menu;
+  }
 }

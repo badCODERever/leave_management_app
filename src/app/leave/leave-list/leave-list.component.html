@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-12">
+        <button type="button" class="btn btn-primary">Add Leave</button>
+    </div>
+</div>
+<hr>
+<div class="my-custom-scrollbar">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <app-leave-item *ngFor="let leaveEl of leaves " [leave]="leaveEl" (leaveSelected)="onLeaveSelected(leaveEl)"></app-leave-item>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.my-custom-scrollbar {
+    position: relative;
+    height: 240px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.my-custom-scrollbar::-webkit-scrollbar {
+    display: none;
+}
